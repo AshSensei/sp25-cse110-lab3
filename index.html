@@ -67,19 +67,19 @@
         <br>
         <section id ="media">
         <h3>Presented Pictures</h3>
-        <img src="resources\pictures\ans_dry_cleaning.png" width="200"/>
+        <img src="resources/pictures/ans_dry_cleaning.png" width="200" alt="An's Dry Cleaning Image"/>
         
        
         <h3>Live Meeting Footage</h3>
         <video width="500" controls> 
-            <source src="resources\videos\Card Dealing.mp4" type="video/mp4">
+            <source src="resources/videos/Card Dealing.mp4" type="video/mp4">
             Card Dealing Footage
         </video>
         
         <div>
             <h3>Live Meeting Audio</h3>
             <audio controls> 
-                <source src="resources\audio\Meeting Audio.mp3" type="audio/mp3">
+                <source src="resources/audio/Meeting Audio.mp3" type="audio/mp3">
                 Typing Audio
             </audio>
         </div>
@@ -88,7 +88,7 @@
     </main>
     
     <footer>
-        <form method="get">
+        <form method="get" id="form">
             <fieldset>
 
                 <label for="spwd">Secret Password</label>
@@ -99,19 +99,20 @@
 
                 <label for="vanilla">Vanilla</label>
                 <input type="radio" id="vanilla" name="vanilla"><br><br>
-                <label for="strawberry">Strawberry<label>
+                <label for="strawberry">Strawberry</label>
                 <input type="radio" id="strawberry" name="strawberry"><br><br>
 
                 <label for="collect">Date Collected:</label>
                 <input type="date" id="collect" name="collect"><br><br>
                 
-                <textarea id="Comments" name="comments">Insert Info</textarea> <br><br>
-                <button type="button">Submit Info</button>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments">Insert Info</textarea> <br><br>
+                <button type="button" for="form">Submit Info</button>
                 
             </fieldset>
         </form>
         
-        <label for="flavors">Choose a flavor:</label>
+        <label for="flavorList">Choose a flavor:</label>
         <input list="flavors" name="flavorList" id="flavorList">
         <datalist id="flavors">
             <option value="Vanilla">
@@ -121,7 +122,7 @@
         </datalist> <br> <br>
 
         <label for="containers">Choose a container:</label>
-        <select name="containers" id="container">
+        <select name="containers" id="containers">
             <option value="Cup">Cup</option>
             <option value="Cone">Cone</option>
         </select>
