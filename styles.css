@@ -67,9 +67,17 @@ footer{
     padding-left: 0%;
     padding-right: 2%;
 }
+/* combinator selectors */
+ul li {
+    text-decoration: line-through;
+}
+
+ol > li {
+    text-align:left;
+}
 
 /* Universal Selector */
 
 * {
-    
+    font-family: "Inter";
 }
