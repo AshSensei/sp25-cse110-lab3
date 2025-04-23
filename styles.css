@@ -1,0 +1,36 @@
+/* Variable */
+:root {
+    --pink: #db8287;
+  }
+/* Class Selectors */
+.mint-green{
+    color:hsl(131,91%,86%);
+}
+
+/* ID Selectors */
+#strawberry{
+    color:red;
+}
+
+#bold-white{
+    color: color(srgb 1.00 1.00 1.00)
+}
+#pink-shade{
+    color: var(--pink, pink)
+}
+/* Element Selector */
+
+body {
+    background-color: color(srgb 0.75 0.75 0.75);
+}
+
+/* Attribute Selector */
+a[href="#media"] {
+    color: color-mix(in srgb, green 60%, black 40%);
+}
+
+/* Universal Selector */
+
+* {
+    
+}
