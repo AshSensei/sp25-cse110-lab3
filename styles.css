@@ -34,6 +34,11 @@
 #videos{
     margin: 2% 5em 1vw 5%
 }
+
+#audio{
+    margin: auto;
+}
+
 /* Element Selector */
 
 body {
