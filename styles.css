@@ -11,12 +11,12 @@
   color: blue;
 }
 
-.flex{
-    display:flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    align-items:center;
-    justify-content: space-around;
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 /* ID Selectors */
 
@@ -28,20 +28,30 @@
 }
 
 #pictures {
-  margin-bottom: 100px;
-  margin-top: 1in;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 0.2in;
   margin-left: 0cm;
   margin-right: 10px;
 }
 
 #videos {
-  margin: 2% 5em 1vw 0%;
+  text-align: center;
   position: relative;
+  text-align: center;
+  display: block;
 }
-
+#card-video {
+  height: auto;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  display: block;
+}
 #audio,
 #agenda {
   margin: auto;
+  text-align: center;
 }
 
 #agenda {
@@ -60,23 +70,24 @@
   display: inline-block;
   height: 30px;
   width: 5vw;
-  max-width: 100px;
-  min-width: 5px;
+  max-width: 150px;
+  min-width: 100px;
   margin-top: 5px;
 }
 
-#position-btn:hover{
-    background-color: gold;
+#position-btn:hover {
+  background-color: gold;
 }
-#position-btn:active{
-    background-color: forestgreen;
+#position-btn:active {
+  background-color: forestgreen;
 }
 
-#media{
-    display: grid;
-    justify-items: center;
-    align-items:center;
-    justify-content:center;
+#media {
+  margin: 2% 5em 1vw 0%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
 }
 /* Element Selector */
 
@@ -124,4 +135,15 @@ h3:has(+ ol) {
 
 * {
   font-family: "Inter";
+}
+
+/* Responsiveness Properties */
+
+@media screen and (max-width: 700px) {
+  .flex {
+    flex-direction: column;
+  }
+  #media {
+    grid-template-columns: 1fr;
+  }
 }
