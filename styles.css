@@ -11,10 +11,7 @@
   color: blue;
 }
 
-
-
 /* ID Selectors */
-
 
 #bold-white {
   color: color(srgb 1 1 1);
@@ -32,6 +29,7 @@
 
 #videos {
   margin: 2% 5em 1vw 0%;
+  position:relative;
 }
 
 #audio,
@@ -45,18 +43,20 @@
   border-color: navy;
   border-width: 2px;
   border-radius: 5px;
+  position:  static;
   &:hover {
-    background-color: #EBECF0;
+    background-color: #ebecf0;
   }
+
 }
 
-#position-btn{
-    display:inline-block;
-    height: 30px;
-    weight: 5vw;
-    max-width: 100px;
-    min-width: 5px;
-    margin-top:5px;
+#position-btn {
+  display: inline-block;
+  height: 30px;
+  weight: 5vw;
+  max-width: 100px;
+  min-width: 5px;
+  margin-top: 5px;
 }
 /* Element Selector */
 
@@ -84,22 +84,21 @@ ol > li {
   text-align: left;
 }
 
-button ~ h2{
-    display:block;
+button ~ h2 {
+  display: block;
 }
 
-summary + p{
-    color: purple;
+summary + p {
+  color: purple;
 }
 
 li.strawberry {
-    color: red;
+  color: red;
 }
 
-h3:has(+ol){
-    text-decoration:underline;
+h3:has(+ ol) {
+  text-decoration: underline;
 }
-
 
 /* Universal Selector */
 
