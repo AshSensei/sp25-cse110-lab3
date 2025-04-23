@@ -1,83 +1,108 @@
 /* Variable */
 :root {
-    --pink: #db8287;
-  }
+  --pink: #db8287;
+}
 /* Class Selectors */
-.mint-green{
-    color:hsl(131,91%,86%);
+.mint-green {
+  color: hsl(131, 91%, 86%);
 }
 
-.special-hover:hover{
-    color: blue;
+.special-hover:hover {
+  color: blue;
 }
 
 
 
 /* ID Selectors */
-#strawberry{
-    color:red;
+
+
+#bold-white {
+  color: color(srgb 1 1 1);
+}
+#pink-shade {
+  color: var(--pink, pink);
 }
 
-#bold-white{
-    color: color(srgb 1.00 1.00 1.00)
-}
-#pink-shade{
-    color: var(--pink, pink)
-}
-
-#pictures{
-    margin-bottom: 100px;
-    margin-top: 1in;
-    margin-left: 0cm;
-    margin-right: 10px;
-
+#pictures {
+  margin-bottom: 100px;
+  margin-top: 1in;
+  margin-left: 0cm;
+  margin-right: 10px;
 }
 
-#videos{
-    margin: 2% 5em 1vw 0%
+#videos {
+  margin: 2% 5em 1vw 0%;
 }
 
-#audio, #agenda{
-    margin: auto;
+#audio,
+#agenda {
+  margin: auto;
 }
 
-#agenda{
-    padding: 2% 0 2% 1%;
-    border-style: solid;
-    border-color: navy;
-    border-width: 2px;
-    border-radius: 5px;
-
+#agenda {
+  padding: 2% 0 2% 1%;
+  border-style: solid;
+  border-color: navy;
+  border-width: 2px;
+  border-radius: 5px;
+  &:hover {
+    background-color: #EBECF0;
+  }
 }
 
+#position-btn{
+    display:inline-block;
+    height: 30px;
+    weight: 5vw;
+    max-width: 100px;
+    min-width: 5px;
+    margin-top:5px;
+}
 /* Element Selector */
 
 body {
-    background-color: color(srgb 0.75 0.75 0.75);
+  background-color: color(srgb 0.75 0.75 0.75);
 }
 
 /* Attribute Selector */
 a[href="#media"] {
-    color: color-mix(in srgb, green 60%, black 40%);
+  color: color-mix(in srgb, green 60%, black 40%);
 }
 
-footer{
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 0%;
-    padding-right: 2%;
+footer {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 0%;
+  padding-right: 2%;
 }
 /* combinator selectors */
 ul li {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 ol > li {
-    text-align:left;
+  text-align: left;
 }
+
+button ~ h2{
+    display:block;
+}
+
+summary + p{
+    color: purple;
+}
+
+li.strawberry {
+    color: red;
+}
+
+h3:has(+ol){
+    text-decoration:underline;
+}
+
 
 /* Universal Selector */
 
 * {
-    font-family: "Inter";
+  font-family: "Inter";
 }
