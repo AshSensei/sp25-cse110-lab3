@@ -11,6 +11,13 @@
   color: blue;
 }
 
+.flex{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content: space-around;
+}
 /* ID Selectors */
 
 #bold-white {
@@ -65,6 +72,12 @@
     background-color: forestgreen;
 }
 
+#media{
+    display: grid;
+    justify-items: center;
+    align-items:center;
+    justify-content:center;
+}
 /* Element Selector */
 
 body {
