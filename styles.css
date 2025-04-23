@@ -7,6 +7,10 @@
     color:hsl(131,91%,86%);
 }
 
+.special-hover:hover{
+    color: blue;
+}
+
 /* ID Selectors */
 #strawberry{
     color:red;
@@ -17,6 +21,18 @@
 }
 #pink-shade{
     color: var(--pink, pink)
+}
+
+#pictures{
+    margin-bottom: 100px;
+    margin-top: 1in;
+    margin-left: 2cm;
+    margin-right: 10px;
+
+}
+
+#videos{
+    margin: 2% 5em 1vw 5%
 }
 /* Element Selector */
 

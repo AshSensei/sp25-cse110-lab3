@@ -1,137 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ashton's Meeting Minutes</title>
-    <link rel="icon" type="image/png" href="resources/pictures/post-it.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="resources/pictures/post-it.png" />
+    <link rel="stylesheet" href="styles.css" />
     <style>
-        #Ashton{
-            color:#008000;
-        }
-    </style>        
+      #Ashton {
+        color: #008000;
+      }
+    </style>
   </head>
   <body>
     <header>
-        <h1>Best Ice Cream Flavors</h1>
-        <h2 id="pink-shade">Brainstorm Session</h2>
-        <h2 id="bold-white">04-15-2025</h2>
+      <h1>Best Ice Cream Flavors</h1>
+      <h2 id="pink-shade">Brainstorm Session</h2>
+      <h2 id="bold-white">04-15-2025</h2>
     </header>
     <nav>
-        <a href="#media">Jump to Media</a>
+      <a href="#media">Jump to Media</a>
     </nav>
 
     <main>
-        <section>
-            <h3>Attendance List</h3>
-            <ul>
-                <li id="Ashton">Ashton</li>
-                <li>Dylan G.</li>
-                <li>Irving B.</li>
-                <li><i>Helly R.</i></li>
-                <li>Mark S.</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Agenda</h3>
-            <ol>
-                <li>Macrodata Refinement</li>
-                <li>Vanilla discussion</li>
-                <li style="color:rgb(132,86,60)">Chocolate Discussion</li>
-                <li id="strawberry">Strawberry Discussion</li>
-                <li>Neopolitan Discussion</li>
-            </ol>
-        </section>
+      <section>
+        <h3>Attendance List</h3>
+        <ul>
+          <li id="Ashton">Ashton</li>
+          <li>Dylan G.</li>
+          <li>Irving B.</li>
+          <li><i>Helly R.</i></li>
+          <li>Mark S.</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Agenda</h3>
+        <ol>
+          <li>Macrodata Refinement</li>
+          <li>Vanilla discussion</li>
+          <li style="color: rgb(132, 86, 60)">Chocolate Discussion</li>
+          <li id="strawberry">Strawberry Discussion</li>
+          <li>Neopolitan Discussion</li>
+        </ol>
+      </section>
 
-        <section>
-            <h3>Unfinished Business</h3>
-            <ol>
-                <li><em>Cookie Dough</em> Wrap-Up</li>
-                <li>Pistachio Disaster</li>
-                <li class="mint-green">Mint Chocolate Chip Phase</li>
-            </ol>
-        </section>
+      <section>
+        <h3>Unfinished Business</h3>
+        <ol>
+          <li><em>Cookie Dough</em> Wrap-Up</li>
+          <li>Pistachio Disaster</li>
+          <li class="mint-green">Mint Chocolate Chip Phase</li>
+        </ol>
+      </section>
 
-        <section>
-            <h3>New Business</h3>
-            <ol>
-                <li>Rocky Road Rollers</li>
-                <li><span><b>Coffee Conundrum</b></span></li>
-            </ol>
-        </section>
+      <section>
+        <h3>New Business</h3>
+        <ol>
+          <li>Rocky Road Rollers</li>
+          <li>
+            <span><b>Coffee Conundrum</b></span>
+          </li>
+        </ol>
+      </section>
 
+      <details>
+        <summary>Miscellaneous Comments</summary>
+        <p>
+          The ice cream machine in <strong>O&D</strong> has broken down, send
+          Milchick over to fix it in the next quarter.
+        </p>
+        <p class="special-hover">Hover here!</p>
+      </details>
+
+      <br />
+      <hr />
+      <br />
+      <section id="media">
+        <section id="pictures">
+            <h3>Presented Pictures</h3>
+            <img
+            src="resources/pictures/ans_dry_cleaning.png"
+            width="200"
+            alt="An's Dry Cleaning Image"
+            />
+        </section>
         
-        
-        <details>
-            <summary>Miscellaneous Comments</summary>
-            <p>The ice cream machine in <strong>O&D</strong> has broken down, send Milchick over to fix it in the next quarter.</p>
-        </details>
-        
-        <br>
-        <hr>
-        <br>
-        <section id ="media">
-        <h3>Presented Pictures</h3>
-        <img src="resources/pictures/ans_dry_cleaning.png" width="200" alt="An's Dry Cleaning Image"/>
-        
-       
-        <h3>Live Meeting Footage</h3>
-        <video width="500" controls> 
-            <source src="resources/videos/Card-Dealing.mp4" type="video/mp4">
+        <section id="videos">
+            <h3>Live Meeting Footage</h3>
+            <video width="500" controls>
+            <source src="resources/videos/Card-Dealing.mp4" type="video/mp4" />
             Card Dealing Footage
-        </video>
-        
-        <div>
-            <h3>Live Meeting Audio</h3>
-            <audio controls> 
-                <source src="resources/audio/Meeting-Audio.mp3" type="audio/mp3">
-                Typing Audio
-            </audio>
-        </div>
+            </video>
         </section>
         
+
+        <div>
+          <h3>Live Meeting Audio</h3>
+          <audio controls>
+            <source src="resources/audio/Meeting-Audio.mp3" type="audio/mp3" />
+            Typing Audio
+          </audio>
+        </div>
+      </section>
     </main>
-    
+
     <footer>
-        <form method="get" id="form">
-            <fieldset>
+      <form method="get" id="form">
+        <fieldset>
+          <label for="spwd">Secret Password</label>
+          <input type="text" id="spwd" name="spwd" /><br /><br />
 
-                <label for="spwd">Secret Password</label>
-                <input type="text" id="spwd" name="spwd"><br><br>
+          <label for="gather">Ice Cream Gathered?</label>
+          <input type="checkbox" id="gather" name="gather" /><br /><br />
 
-                <label for="gather">Ice Cream Gathered?</label>
-                <input type="checkbox" id="gather" name="gather"><br><br>
+          <label for="vanilla">Vanilla</label>
+          <input type="radio" id="vanilla" name="vanilla" /><br /><br />
+          <label for="strawberry">Strawberry</label>
+          <input type="radio" id="strawberry" name="strawberry" /><br /><br />
 
-                <label for="vanilla">Vanilla</label>
-                <input type="radio" id="vanilla" name="vanilla"><br><br>
-                <label for="strawberry">Strawberry</label>
-                <input type="radio" id="strawberry" name="strawberry"><br><br>
+          <label for="collect">Date Collected:</label>
+          <input type="date" id="collect" name="collect" /><br /><br />
 
-                <label for="collect">Date Collected:</label>
-                <input type="date" id="collect" name="collect"><br><br>
-                
-                <label for="comments">Comments:</label>
-                <textarea id="comments" name="comments">Insert Info</textarea> <br><br>
-                <button type="submit">Submit Info</button>
-                
-            </fieldset>
-        </form>
-        
-        <label for="flavorList">Choose a flavor:</label>
-        <input list="flavors" name="flavorList" id="flavorList">
-        <datalist id="flavors">
-            <option value="Vanilla">
-            <option value="Strawberry">
-            <option value="Chocolate">
-            <option value="Special">
-        </datalist> <br> <br>
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="comments">Insert Info</textarea>
+          <br /><br />
+          <button type="submit">Submit Info</button>
+        </fieldset>
+      </form>
 
-        <label for="containers">Choose a container:</label>
-        <select name="containers" id="containers">
-            <option value="Cup">Cup</option>
-            <option value="Cone">Cone</option>
-        </select>
+      <label for="flavorList">Choose a flavor:</label>
+      <input list="flavors" name="flavorList" id="flavorList" />
+      <datalist id="flavors">
+        <option value="Vanilla"></option>
+        <option value="Strawberry"></option>
+        <option value="Chocolate"></option>
+        <option value="Special"></option>
+      </datalist>
+
+      <br />
+      <br />
+
+      <label for="containers">Choose a container:</label>
+      <select name="containers" id="containers">
+        <option value="Cup">Cup</option>
+        <option value="Cone">Cone</option>
+      </select>
     </footer>
   </body>
 </html>
