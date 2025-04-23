@@ -11,6 +11,8 @@
     color: blue;
 }
 
+
+
 /* ID Selectors */
 #strawberry{
     color:red;
@@ -26,17 +28,26 @@
 #pictures{
     margin-bottom: 100px;
     margin-top: 1in;
-    margin-left: 2cm;
+    margin-left: 0cm;
     margin-right: 10px;
 
 }
 
 #videos{
-    margin: 2% 5em 1vw 5%
+    margin: 2% 5em 1vw 0%
 }
 
-#audio{
+#audio, #agenda{
     margin: auto;
+}
+
+#agenda{
+    padding: 2% 0 2% 1%;
+    border-style: solid;
+    border-color: navy;
+    border-width: 2px;
+    border-radius: 5px;
+
 }
 
 /* Element Selector */
@@ -48,6 +59,13 @@ body {
 /* Attribute Selector */
 a[href="#media"] {
     color: color-mix(in srgb, green 60%, black 40%);
+}
+
+footer{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 0%;
+    padding-right: 2%;
 }
 
 /* Universal Selector */
